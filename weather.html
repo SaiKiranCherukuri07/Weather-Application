@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Weather App">
+    <meta name="keywords" content="Weather Application, Weather Forecast, Weather Forecast Live, Live weather">
+    <meta name="author" content="Sai Kiran Cherukuri">
+    <!-- <meta http-equiv="refresh" content="120"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="weather.css">
+    <script src="https://kit.fontawesome.com/b9977b8056.js" crossorigin="anonymous"></script>
+    <title>Weather App</title>
+</head>
+<body class="myPage">
+
+    <nav id="navbar">
+        <h3 id="title">Weather Application</h3>
+        <h3 class="currentTime"></h3>
+    </nav>
+    <div class="card">
+        <div class="search">
+            <i class="fa-solid fa-location-dot  location"></i>
+            <input type="text" name="city" placeholder="Enter the City" spellcheck="false">
+            <div class="search-Btn"><i class="fa-solid fa-magnifying-glass-location fa-2xl"></i></div>
+        </div>
+
+        <div class="error">
+            <p>Invalid City</p>
+        </div>
+        <div class="weather">
+            <img src=" " class="weather-img" />
+            <h1 class="temp">--</h1>
+            <h2 class="city">--</h2>
+            <div class="details">
+                <div class="col">
+                    <i class="fa-solid fa-water fa-2xl"></i>
+                    <div>
+                        <p class="humidity">--</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <i class="fa-solid fa-wind fa-2xl"></i>
+                    <div>
+                        <p class="wind">--<p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="weather.js" ></script>
+</body>
+</html>
